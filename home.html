@@ -1,17 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<script type="text/javascript" src="angular.min.js"></script>
 	<script type="text/javascript" src="helloWorld.js"></script>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
 </head>
 <body ng-app="helloWorldApp">
-    <div ng-controller="HelloWorldController as helloWorld">
-    <span>Ola mundo! Meu nome é {{getName()}}</span>
-    <form>
-        <input placeholder="Name" ng-model="name"></input>
-        <input placeholder="Last Name" ng-model="lastName"></input>
-    </form>
+    <div ng-controller="HelloWorldController as helloWorld" class="container-fluid">
+	    <h1>Ola mundo!</h1>
+	    <h3>Meu nome é : {{getFullName()}}</h3>	    
+	    <form>
+	        <input placeholder="First Name" ng-model="firstName"></input>
+	        <input placeholder="Last Name" ng-model="lastName"></input>
+	    </form>
     </div>    
 </body>
 </html>

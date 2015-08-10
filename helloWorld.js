@@ -1,8 +1,8 @@
 angular.module('helloWorldApp', [])
   .controller('HelloWorldController', ['$scope', function($scope) {
-    $scope.name = "";
+    $scope.firstName = "";
     $scope.lastName = "";
-    $scope.getName = function() {
-      return $scope.name + " " + $scope.lastName;
+    $scope.getFullName = function() {
+      return $scope.firstName + " " + $scope.lastName;
     };
   }]);
