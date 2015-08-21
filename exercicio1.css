@@ -1,0 +1,40 @@
+body {
+	background-color: #F0F8FF;
+}
+a {
+	text-decoration: none;
+	color: #6495ED; 
+}
+div {
+	color: #D2691E;
+}
+ul {
+	list-style-type: none;
+	color: #6BD007;		
+}
+.categories .category{
+	float: left;
+	position: relative;
+	border-right: 1px solid #BEBFD2;
+	padding: 10;
+	width: 5%;
+	text-align: center;
+}
+.categories .category:hover{
+	background-color: #6BD007;	
+	color: white;
+	border: 0;
+	content: "!";
+}
+.categories .category.selected:after { 	
+	content:"*"; 
+}
+.categories .category:last-child{
+	border-right: 0;
+}
+
+.items{
+	position: absolute;
+  	top: 10%;
+	left: -1%;
+}
