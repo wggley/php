@@ -1,0 +1,13 @@
+<script type="text/javascript">
+	function verify(form) {
+		console.log(form);
+	}
+</script>
+<form onSubmit="this.firstname.required = true; this.lastname.required = true; this.phone.optional = true; this.zip.min = 0; this.zip.max = 99999; return verify(this);">
+	<input type="text" name="firstname"/>
+	<input type="text" name="lastname"/>
+	<input type="text" name="phone"/>
+	<input type="text" name="zip"/>
+	<input type="submit"/>
+</form>
+
