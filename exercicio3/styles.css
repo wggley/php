@@ -1,0 +1,82 @@
+/*reset*/
+a {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+/*init*/
+section {
+	background: aqua;
+    margin: auto;
+    padding: 10px;
+	overflow:hidden;
+    word-wrap: break-word;
+}
+.categories {
+	width: 15%;
+    background: red;
+    float: left;  
+}
+.category.selected {
+	background: yellow;
+}
+.order{
+	margin-left: 10px;
+	padding: 10px;
+}
+.order span{
+	padding: 10px;
+}
+.order a.selected{
+	text-decoration: none;
+}
+.order a.notselected{
+	text-decoration: underline;
+}
+.highlighted {
+	background-color: yellow;
+}
+.items {
+	width: 85%;
+    background: gray;
+    float: left; 
+}
+.items .item:first-child {
+	height: 20px;
+}
+.items .item {
+	height: 80px;
+	border: 1px solid;
+	overflow: hidden;
+}
+.items .titulo{
+	float: left;
+	width: 30%;
+	
+}
+.items .texto {
+	float: right;
+	width: 70%;
+}
+
+.pages {
+	white-space: nowrap;
+}
+
+.pages li{
+	display: inline;
+}
+
+.pages .selected a{
+	text-decoration: none;
+}
+
+.pages .notselected a{
+	text-decoration: underline;
+}
