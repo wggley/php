@@ -1,9 +1,9 @@
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="styles.css">	
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<section>		
+	<section>
 		<div class="categories">
 			<ul>
 			<?php foreach($categories as $category) : ?>
@@ -19,14 +19,14 @@
 					<input name="search" value="<?php echo isset($_GET['search'])?  $_GET['search'] :''; ?>">
 					<input type="hidden" name="id_category" value="<?php echo isset($_GET['id_category'])?  $_GET['id_category'] :''; ?>">
 					<input type="submit">
-				</form>			
+				</form>
 			</div>
 			<div class="order">
 				Ordenar por:
-				<span>titulo 
+				<span>titulo
 					(<a href="?id_category=<?php echo $_GET['id_category']; ?>&titulo=asc" class="<?php echo $_GET['titulo'] == 'asc' ? 'selected' : 'notselected'; ?>">ascendente</a>/<a href="?id_category=<?php echo $_GET['id_category']; ?>&titulo=desc" class="<?php echo $_GET['titulo'] == 'desc' ? 'selected' : 'notselected'; ?>">descendente</a>)
 				</span>
-				<span>antiguidade 
+				<span>antiguidade
 					(<a href="?id_category=<?php echo $_GET['id_category']; ?>&createdon=asc" class="<?php echo $_GET['createdon'] == 'asc' ? 'selected' : 'notselected'; ?>">ascendente</a>/<a href="?id_category=<?php echo $_GET['id_category']; ?>&createdon=desc" class="<?php echo $_GET['createdon'] == 'desc' ? 'selected' : 'notselected'; ?>">descendente</a>)
 				</span>
 				<span>(<a href="?id_category=<?php echo $_GET['id_category']; ?>&random=asc" class="<?php echo $_GET['random'] == 'asc' ? 'selected' : 'notselected'; ?>">aleatorio</a>)</span>
@@ -43,7 +43,7 @@
 			</ul>
 			<div class="items">
 				<ul>
-					<li class="item">
+					<li class="item-header">
 						<span class="titulo">titulo</span>
 						<span class="texto">texto</span>
 					</li>
@@ -57,10 +57,10 @@
 							<span class="titulo"><?php echo $item['titulo']; ?></span>
 							<span class="texto"><?php echo $item['texto']; ?></span>
 						</li>
-					<?php endforeach ?>					
-				</ul>				
+					<?php endforeach ?>
+				</ul>
 			</div>
-		<?php endif ?>		
+		<?php endif ?>
 	</section>
 </body>
 </html>

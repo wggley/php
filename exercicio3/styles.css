@@ -1,6 +1,7 @@
 /*reset*/
 a {
 	text-decoration: none;
+    color: #6297BC;
 }
 ul {
 	list-style-type: none;
@@ -12,19 +13,28 @@ ul {
 }
 /*init*/
 section {
-	background: aqua;
+	background: #BDCAD1;
     margin: auto;
     padding: 10px;
 	overflow:hidden;
     word-wrap: break-word;
+    color: #6297BC;
 }
 .categories {
 	width: 15%;
-    background: red;
-    float: left;  
+    background-color: white;
+    float: left;
+    border-radius: 10px;
 }
-.category.selected {
-	background: yellow;
+.category a{
+    color: #A7BBD5;
+}
+.category a:hover{
+    text-decoration: underline;
+}
+.category.selected a {
+    color: #9EC630;
+    text-decoration: underline;
 }
 .order{
 	margin-left: 10px;
@@ -35,17 +45,24 @@ section {
 }
 .order a.selected{
 	text-decoration: none;
+    color: #9EC630;
 }
 .order a.notselected{
 	text-decoration: underline;
 }
 .highlighted {
-	background-color: yellow;
+	background-color: darkcyan;
+    color: white;
 }
 .items {
 	width: 85%;
-    background: gray;
-    float: left; 
+    background: #EFF5FF;
+    float: left;
+    border-radius: 10px;
+}
+.items .item-header span{
+    background: #6297BC;
+    color: white;
 }
 .items .item:first-child {
 	height: 20px;
@@ -58,7 +75,7 @@ section {
 .items .titulo{
 	float: left;
 	width: 30%;
-	
+
 }
 .items .texto {
 	float: right;
